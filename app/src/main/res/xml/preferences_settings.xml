@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+
+        android:title="General">
+
+        <org.xdty.preference.ColorPreference
+
+            android:defaultValue="@color/teal"
+            android:key="primary_color"
+            android:summary="The primary theme color, defaults to teal"
+            android:title="Primary color"
+            tools:colors="@array/primary_colors"
+            tools:columns="5"
+            tools:dialogTitle="Choose a color" />
+
+        <org.xdty.preference.ColorPreference
+
+            android:defaultValue="@color/deep_orange_accent"
+            android:key="accent_color"
+            android:summary="The accent theme color, defaults to orange"
+            android:title="Accent color"
+            tools:colors="@array/accent_colors"
+            tools:columns="5"
+            tools:dialogTitle="Choose a color" />
+
+        <CheckBoxPreference
+
+            android:defaultValue="true"
+            android:key="24_hour_time"
+            android:summary="Use 24-hour format instead of AM/PM format"
+            android:title="Use 24-hour format" />
+
+        <CheckBoxPreference
+
+            android:defaultValue="false"
+            android:key="vibrate_only_during_classes"
+            android:summary="Vibrate only unless silent mode is on"
+            android:title="Vibrate only during classes" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+
+        android:title="Overview">
+
+        <CheckBoxPreference
+
+            android:defaultValue="true"
+            android:key="expand_next_classes"
+            android:summary="Expand next classes upon arrival on the home screen"
+            android:title="Expand next classes" />
+
+        <SwitchPreference
+
+            android:defaultValue="true"
+            android:key="tomorrow_classes"
+            android:summary="Show tomorrow's classes on the home screen"
+            android:title="Tomorrow's classes" />
+
+        <CheckBoxPreference
+
+            android:defaultValue="false"
+            android:dependency="tomorrow_classes"
+            android:key="expand_tomorrow_classes"
+            android:summary="Expand tomorrow's classes upon arrival on the home screen"
+            android:title="Expand tomorrow's classes" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+
+        android:title="Timetable">
+
+        <com.afollestad.materialdialogs.prefs.MaterialListPreference
+
+            android:defaultValue="1"
+            android:dialogTitle="Choose first day of week"
+            android:entries="@array/days_of_week"
+            android:entryValues="@array/days_of_week_values"
+            android:key="first_day_of_week"
+            android:negativeButtonText=""
+            android:summary="Choose the first working day of your week"
+            android:title="First day of week" />
+
+        <com.afollestad.materialdialogs.prefs.MaterialEditTextPreference
+
+            android:defaultValue="08:00"
+            android:dialogTitle="Enter first lesson time"
+            android:hint="HH:mm"
+            android:key="first_lesson_time"
+            android:maxLines="1"
+            android:negativeButtonText=""
+            android:summary="Enter when your day usually starts in the format HH:mm"
+            android:title="First lesson time" />
+
+        <EditTextPreference
+
+            android:defaultValue="60"
+            android:dialogTitle="Enter lesson length"
+            android:key="default_lesson_length"
+            android:numeric="integer"
+            android:summary="Choose how long a lesson usually is in minutes"
+            android:title="Default lesson length" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+
+        android:title="Notifications">
+
+        <SwitchPreference
+
+            android:defaultValue="true"
+            android:key="class_notification"
+            android:summary="Show a notification throughout the current class"
+            android:title="Current class notification" />
+
+        <CheckBoxPreference
+
+            android:defaultValue="true"
+            android:dependency="class_notification"
+            android:key="detailed_notification"
+            android:summary="Shows percentage progress"
+            android:title="Show details" />
+
+        <CheckBoxPreference
+
+            android:defaultValue="false"
+            android:dependency="detailed_notification"
+            android:key="flip_colors"
+            android:summary="Set the class color as the notification background"
+            android:title="Flip notification colors" />
+
+        <SwitchPreference
+
+            android:defaultValue="true"
+            android:key="next_class_notification"
+            android:summary="Show a notification for the next class"
+            android:title="Next class notification" />
+
+        <com.afollestad.materialdialogs.prefs.MaterialListPreference
+
+            android:defaultValue="60"
+            android:dependency="next_class_notification"
+            android:dialogTitle="Choose notification timing"
+            android:entries="@array/next_class_notification_minutes_text"
+            android:entryValues="@array/next_class_notification_minutes_values"
+            android:key="next_class_notification_minutes"
+            android:negativeButtonText=""
+            android:summary="Choose when a notification for the next class appears"
+            android:title="Next class notification timing" />
+
+        <com.afollestad.materialdialogs.prefs.MaterialMultiSelectListPreference
+
+            android:dialogTitle="Choose reminder timings"
+            android:entries="@array/reminder_times_text"
+            android:entryValues="@array/reminder_times_values"
+            android:key="reminder_times"
+            android:negativeButtonText=""
+            android:summary="Choose when you get reminded about events"
+            android:title="Reminder timings" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

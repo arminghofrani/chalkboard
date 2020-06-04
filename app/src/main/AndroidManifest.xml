@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ghofrani.classapp"
+    android:installLocation="internalOnly">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+
+        android:name=".module.Chalkboard"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/chalkboard_theme"
+        tools:replace="android:theme">
+
+        <activity
+
+            android:name=".activity.Main"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+
+        </activity>
+
+        <activity
+
+            android:name=".activity.Settings"
+            android:parentActivityName=".activity.Main"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+
+            android:name=".activity.ChangeEvent"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activity.Main"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+
+            android:name=".activity.ViewClass"
+            android:hardwareAccelerated="true"
+            android:parentActivityName=".activity.Main"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+
+            android:name=".activity.ChangeClass"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+
+            android:name=".activity.EditDay"
+            android:parentActivityName=".activity.Main"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+
+            android:name=".activity.About"
+            android:parentActivityName=".activity.Main"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <service
+
+            android:name=".service.Background"
+            android:exported="false"
+            android:icon="@mipmap/ic_launcher"
+            android:label="ChalkboardService">
+
+        </service>
+
+        <receiver android:name=".module.BootBroadcastReceiver">
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+            </intent-filter>
+
+        </receiver>
+
+        <receiver android:name=".module.AlarmReceiver" />
+
+    </application>
+
+</manifest>

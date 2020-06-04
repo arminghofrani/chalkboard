@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <color name="red">#f44336</color>
+    <color name="red_dark">#d32f2f</color>
+    <color name="red_accent">#ff5252</color>
+    <color name="pink">#e91e63</color>
+    <color name="pink_dark">#c2185b</color>
+    <color name="pink_accent">#ff4081</color>
+    <color name="purple">#9c27b0</color>
+    <color name="purple_dark">#7b1fa2</color>
+    <color name="purple_accent">#e040fb</color>
+    <color name="deep_purple">#673ab7</color>
+    <color name="deep_purple_dark">#512da8</color>
+    <color name="deep_purple_accent">#7c4dff</color>
+    <color name="indigo">#3f51b5</color>
+    <color name="indigo_dark">#303f9f</color>
+    <color name="indigo_accent">#536dfe</color>
+    <color name="blue">#2196f3</color>
+    <color name="blue_dark">#1976d2</color>
+    <color name="blue_accent">#448aff</color>
+    <color name="light_blue">#03a9f4</color>
+    <color name="light_blue_dark">#0288d1</color>
+    <color name="light_blue_accent">#40c4ff</color>
+    <color name="cyan">#00bcd4</color>
+    <color name="cyan_dark">#0097a7</color>
+    <color name="cyan_accent">#18ffff</color>
+    <color name="teal">#009688</color>
+    <color name="teal_dark">#00796b</color>
+    <color name="teal_accent">#64ffda</color>
+    <color name="green">#4caf50</color>
+    <color name="green_dark">#388e3c</color>
+    <color name="green_accent">#69f0ae</color>
+    <color name="light_green">#8bc34a</color>
+    <color name="light_green_dark">#689f38</color>
+    <color name="lime">#cddc39</color>
+    <color name="lime_dark">#afb42b</color>
+    <color name="lime_accent">#eeff41</color>
+    <color name="yellow">#ffeb3b</color>
+    <color name="yellow_accent">#ffff00</color>
+    <color name="amber">#ffc107</color>
+    <color name="amber_accent">#ffd740</color>
+    <color name="orange">#ff9800</color>
+    <color name="orange_dark">#f57c00</color>
+    <color name="orange_accent">#ffab40</color>
+    <color name="deep_orange">#ff5722</color>
+    <color name="deep_orange_dark">#e64a19</color>
+    <color name="deep_orange_accent">#ff6e40</color>
+    <color name="grey">#9e9e9e</color>
+    <color name="blue_grey">#607d8b</color>
+    <color name="blue_grey_dark">#455a64</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+
+</resources>

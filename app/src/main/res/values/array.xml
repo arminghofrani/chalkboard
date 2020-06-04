@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string-array name="next_class_notification_minutes_text">
+
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>45 minutes</item>
+        <item>1 hour</item>
+        <item>2 hours</item>
+        <item>3 hours</item>
+
+    </string-array>
+
+    <string-array name="next_class_notification_minutes_values">
+
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+        <item>120</item>
+        <item>180</item>
+
+    </string-array>
+
+    <string-array name="reminder_times_text">
+
+        <item>One hour before</item>
+        <item>At 6 AM on the due date</item>
+        <item>At 9 PM the day before</item>
+        <item>At 6 PM the day before</item>
+        <item>At the end of your timetable the day before</item>
+        <item>At 6 PM seven days earlier</item>
+
+    </string-array>
+
+    <string-array name="reminder_times_values">
+
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+
+    </string-array>
+
+    <string-array name="days_of_week">
+
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+
+    </string-array>
+
+    <string-array name="days_of_week_values">
+
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+
+    </string-array>
+
+    <array name="primary_colors">
+
+        <item>@color/red</item>
+        <item>@color/pink</item>
+        <item>@color/purple</item>
+        <item>@color/deep_purple</item>
+        <item>@color/indigo</item>
+        <item>@color/blue</item>
+        <item>@color/light_blue</item>
+        <item>@color/cyan</item>
+        <item>@color/teal</item>
+        <item>@color/green</item>
+        <item>@color/light_green</item>
+        <item>@color/lime</item>
+        <item>@color/orange</item>
+        <item>@color/deep_orange</item>
+        <item>@color/blue_grey</item>
+
+    </array>
+
+    <array name="add_class_colors">
+
+        <item>@color/red</item>
+        <item>@color/pink</item>
+        <item>@color/purple</item>
+        <item>@color/deep_purple</item>
+        <item>@color/indigo</item>
+        <item>@color/blue</item>
+        <item>@color/light_blue</item>
+        <item>@color/cyan</item>
+        <item>@color/teal</item>
+        <item>@color/green</item>
+        <item>@color/light_green</item>
+        <item>@color/lime</item>
+        <item>@color/yellow</item>
+        <item>@color/amber</item>
+        <item>@color/orange</item>
+        <item>@color/deep_orange</item>
+        <item>@color/black</item>
+        <item>@color/blue_grey</item>
+
+    </array>
+
+    <array name="accent_colors">
+
+        <item>@color/red_accent</item>
+        <item>@color/pink_accent</item>
+        <item>@color/purple_accent</item>
+        <item>@color/deep_purple_accent</item>
+        <item>@color/indigo_accent</item>
+        <item>@color/blue_accent</item>
+        <item>@color/light_blue_accent</item>
+        <item>@color/cyan_accent</item>
+        <item>@color/teal_accent</item>
+        <item>@color/green_accent</item>
+        <item>@color/lime_accent</item>
+        <item>@color/yellow_accent</item>
+        <item>@color/amber_accent</item>
+        <item>@color/orange_accent</item>
+        <item>@color/deep_orange_accent</item>
+
+    </array>
+
+</resources>

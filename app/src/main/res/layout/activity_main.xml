@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="16dp"
+    tools:openDrawer="left">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.CoordinatorLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.design.widget.AppBarLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include
+
+                    android:id="@+id/activity_main_toolbar"
+                    layout="@layout/view_toolbar_padded_without_elevation" />
+
+                <android.support.design.widget.TabLayout
+
+                    android:id="@+id/activity_main_overview_tab_layout"
+                    style="@style/tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabGravity="fill"
+                    app:tabMode="fixed" />
+
+                <android.support.design.widget.TabLayout
+
+                    android:id="@+id/activity_main_timetable_tab_layout"
+                    style="@style/tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:tabMode="scrollable" />
+
+            </android.support.design.widget.AppBarLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v4.view.ViewPager
+
+                    android:id="@+id/activity_main_overview_view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="104dp"
+                    android:layout_weight="1" />
+
+                <android.support.v4.view.ViewPager
+
+                    android:id="@+id/activity_main_timetable_view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="104dp"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+
+                <LinearLayout
+
+                    android:id="@+id/activity_main_linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="56dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <android.support.design.widget.FloatingActionButton
+
+                android:id="@+id/activity_main_floating_action_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="16dp"
+                android:visibility="invisible" />
+
+        </android.support.design.widget.CoordinatorLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="288dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left">
+
+        <android.support.design.widget.NavigationView
+
+            android:id="@+id/activity_main_navigation_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:headerLayout="@layout/view_drawer_header"
+            app:menu="@menu/drawer" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

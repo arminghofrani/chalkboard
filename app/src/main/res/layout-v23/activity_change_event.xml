@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+
+        android:id="@+id/activity_change_event_toolbar"
+        layout="@layout/view_toolbar_padded" />
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+
+                android:id="@+id/activity_change_event_name_relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="4dp">
+
+                <ImageView
+
+                    android:id="@+id/activity_change_event_name_icon_image_view"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/name"
+                    android:tint="#757575"
+                    android:translationY="1dp" />
+
+                <EditText
+
+                    android:id="@+id/activity_change_event_name_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="28dp"
+                    android:layout_toRightOf="@id/activity_change_event_name_icon_image_view"
+                    android:hint="Name"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:id="@+id/activity_change_event_class_relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@id/activity_change_event_name_relative_layout"
+                android:layout_marginTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="25dp"
+                android:paddingTop="4dp">
+
+                <ImageView
+
+                    android:id="@+id/activity_change_event_class_icon_image_view"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/classes"
+                    android:tint="#757575"
+                    android:translationY="1.75dp" />
+
+                <Spinner
+
+                    android:id="@+id/activity_change_event_class_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="31.75dp"
+                    android:layout_toRightOf="@id/activity_change_event_class_icon_image_view"
+                    android:prompt="@string/spinner_prompt_class"
+                    android:scrollbars="none" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:id="@+id/activity_change_event_type_relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@id/activity_change_event_class_relative_layout"
+                android:layout_marginTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="25dp"
+                android:paddingTop="4dp">
+
+                <ImageView
+
+                    android:id="@+id/activity_change_event_type_icon_image_view"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/event"
+                    android:tint="#757575"
+                    android:translationY="1dp" />
+
+                <Spinner
+
+                    android:id="@+id/activity_change_event_type_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="31.75dp"
+                    android:layout_toRightOf="@id/activity_change_event_type_icon_image_view"
+                    android:prompt="@string/spinner_prompt_type"
+                    android:scrollbars="none" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:id="@+id/activity_change_event_time_radio_group_relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activity_change_event_type_relative_layout"
+                android:layout_marginLeft="0.5dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="13.5dp"
+                android:paddingRight="16dp"
+                android:paddingTop="10dp">
+
+                <RadioGroup
+
+                    android:id="@+id/activity_change_event_time_radio_group"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+
+                        android:id="@+id/activity_change_event_next_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:onClick="onRadioButtonClicked"
+                        android:paddingLeft="27.75dp"
+                        android:text="Due next class"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+
+                        android:id="@+id/activity_change_event_specific_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:onClick="onRadioButtonClicked"
+                        android:paddingLeft="27.75dp"
+                        android:text="Due specific class"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+
+                        android:id="@+id/activity_change_event_custom_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:paddingLeft="27.75dp"
+                        android:text="Due custom date and time"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <CheckBox
+
+                android:id="@+id/activity_change_event_remind_me_check_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activity_change_event_time_radio_group_relative_layout"
+                android:layout_marginLeft="13.75dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:checked="true"
+                android:paddingLeft="27.75dp"
+                android:text="Remind me!"
+                android:textSize="16sp" />
+
+            <EditText
+
+                android:id="@+id/activity_change_event_description_edit_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activity_change_event_remind_me_check_box"
+                android:layout_marginLeft="16.5dp"
+                android:layout_marginRight="16.75dp"
+                android:layout_marginTop="16dp"
+                android:gravity="top|left"
+                android:hint="Add a description..."
+                android:inputType="textMultiLine|textCapSentences"
+                android:lines="4"
+                android:maxLines="8"
+                android:minLines="2"
+                android:scrollbars="none"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

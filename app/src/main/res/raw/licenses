@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<notices>
+
+    <notice>
+
+        <name>Android Support Libraries</name>
+        <url>https://developer.android.com/topic/libraries/support-library/index.html</url>
+        <copyright>Copyright (C) 2018 The Android Open Source Project</copyright>
+        <license>Apache Software License 2.0</license>
+
+    </notice>
+
+    <notice>
+
+        <name>Joda-Time-Android</name>
+        <url>https://github.com/dlew/joda-time-android</url>
+        <copyright>Copyright (C) 2018 Daniel Lew</copyright>
+        <license>Apache Software License 2.0</license>
+
+    </notice>
+
+    <notice>
+
+        <name>ColorPicker</name>
+        <url>https://github.com/xdtianyu/ColorPicker</url>
+        <copyright>Copyright (C) 2018 Tianyu</copyright>
+        <license>Apache Software License 2.0</license>
+
+    </notice>
+
+    <notice>
+
+        <name>Material Date and Time Picker with Range Selection</name>
+        <url>https://github.com/borax12/MaterialDateRangePicker</url>
+        <copyright>Copyright (C) 2018 Supratim Chakraborty</copyright>
+        <license>Apache Software License 2.0</license>
+
+    </notice>
+
+    <notice>
+
+        <name>Material Dialogs</name>
+        <url>https://github.com/afollestad/material-dialogs</url>
+        <copyright>Copyright (C) 2018 Aidan Follestad</copyright>
+        <license>Apache Software License 2.0</license>
+
+    </notice>
+
+    <notice>
+
+        <name>EventBus</name>
+        <url>https://github.com/greenrobot/EventBus</url>
+        <copyright>Copyright (C) 2018 Markus Junginger</copyright>
+        <license>Apache Software License 2.0</license>
+
+    </notice>
+
+    <notice>
+
+        <name>LicensesDialog</name>
+        <url>https://github.com/PSDev/LicensesDialog</url>
+        <copyright>Copyright (C) 2018 Philip Schiffer</copyright>
+        <license>Apache Software License 2.0</license>
+
+    </notice>
+
+</notices>

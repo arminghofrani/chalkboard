@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+
+        android:id="@+id/view_notification_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+
+            android:id="@+id/view_notification_progress_relative_layout"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp">
+
+            <ProgressBar
+
+                android:id="@+id/view_notification_progress_bar_white"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circular_progress_bar_background_white"
+                android:indeterminate="false"
+                android:progressDrawable="@drawable/circular_progress_bar_white"
+                android:visibility="gone" />
+
+            <ProgressBar
+
+                android:id="@+id/view_notification_progress_bar_red"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circular_progress_bar_background"
+                android:indeterminate="false"
+                android:progressDrawable="@drawable/circular_progress_bar_red"
+                android:visibility="gone" />
+
+            <ProgressBar
+
+                android:id="@+id/view_notification_progress_bar_pink"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circular_progress_bar_background"
+                android:indeterminate="false"
+                android:progressDrawable="@drawable/circular_progress_bar_pink"
+                android:visibility="gone" />
+
+            <ProgressBar
+
+                android:id="@+id/view_notification_progress_bar_purple"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circular_progress_bar_background"
+                android:indeterminate="false"
+                android:progressDrawable="@drawable/circular_progress_bar_purple"
+                android:visibility="gone" />
+
+            <ProgressBar
+
+                android:id="@+id/view_notification_progress_bar_deep_purple"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circular_progress_bar_background"
+                android:indeterminate="false"
+                android:progressDrawable="@drawable/circular_progress_bar_deep_purple"
+                android:visibility="gone" />
+
+            <ProgressBar
+
+                android:id="@+id/view_notification_progress_bar_indigo"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circular_progress_bar_background"
+                android:indeterminate="false"
+                android:progressDrawable="@drawable/circular_progress_bar_indigo"
+                android:visibility="gone" />
+
+            <ProgressBar
+
+                android:id="@+id/view_notification_progress_bar_blue"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circular_progress_bar_background"
+                android:indeterminate="false"
+                android:progressDrawable="@drawable/circular_progress_bar_blue"
+                android:visibility="gone" />
+
+            <ProgressBar
+
+                android:id="@+id/view_notification_progress_bar_light_blue"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circular_progress_bar_background"
+                android:indeterminate="false"
+                android:progressDrawable="@drawable/circular_progress_bar_light_blue"
+                android:visibility="gone" />
+
+            <ProgressBar
+
+                android:id="@+id/view_notification_progress_bar_cyan"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circular_progress_bar_background"
+                android:indeterminate="false"
+                android:progressDrawable="@drawable/circular_progress_bar_cyan"
+                android:visibility="gone" />
+
+            <ProgressBar
+
+                android:id="@+id/view_notification_progress_bar_teal"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circular_progress_bar_background"
+                android:indeterminate="false"
+                android:progressDrawable="@drawable/circular_progress_bar_teal"
+                android:visibility="gone" />
+
+            <ProgressBar
+
+                android:id="@+id/view_notification_progress_bar_green"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circular_progress_bar_background"
+                android:indeterminate="false"
+                android:progressDrawable="@drawable/circular_progress_bar_green"
+                android:visibility="gone" />
+
+            <ProgressBar
+
+                android:id="@+id/view_notification_progress_bar_light_green"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circular_progress_bar_background"
+                android:indeterminate="false"
+                android:progressDrawable="@drawable/circular_progress_bar_light_green"
+                android:visibility="gone" />
+
+            <ProgressBar
+
+                android:id="@+id/view_notification_progress_bar_lime"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circular_progress_bar_background"
+                android:indeterminate="false"
+                android:progressDrawable="@drawable/circular_progress_bar_lime"
+                android:visibility="gone" />
+
+            <ProgressBar
+
+                android:id="@+id/view_notification_progress_bar_yellow"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circular_progress_bar_background"
+                android:indeterminate="false"
+                android:progressDrawable="@drawable/circular_progress_bar_yellow"
+                android:visibility="gone" />
+
+            <ProgressBar
+
+                android:id="@+id/view_notification_progress_bar_amber"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circular_progress_bar_background"
+                android:indeterminate="false"
+                android:progressDrawable="@drawable/circular_progress_bar_amber"
+                android:visibility="gone" />
+
+            <ProgressBar
+
+                android:id="@+id/view_notification_progress_bar_orange"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circular_progress_bar_background"
+                android:indeterminate="false"
+                android:progressDrawable="@drawable/circular_progress_bar_orange"
+                android:visibility="gone" />
+
+            <ProgressBar
+
+                android:id="@+id/view_notification_progress_bar_deep_orange"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circular_progress_bar_background"
+                android:indeterminate="false"
+                android:progressDrawable="@drawable/circular_progress_bar_deep_orange"
+                android:visibility="gone" />
+
+            <ProgressBar
+
+                android:id="@+id/view_notification_progress_bar_black"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circular_progress_bar_background"
+                android:indeterminate="false"
+                android:progressDrawable="@drawable/circular_progress_bar_black"
+                android:visibility="gone" />
+
+            <ProgressBar
+
+                android:id="@+id/view_notification_progress_bar_blue_grey"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circular_progress_bar_background"
+                android:indeterminate="false"
+                android:progressDrawable="@drawable/circular_progress_bar_blue_grey"
+                android:visibility="gone" />
+
+            <ProgressBar
+
+                android:id="@+id/view_notification_progress_bar_black_contrast"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circular_progress_bar_background_contrast"
+                android:indeterminate="false"
+                android:progressDrawable="@drawable/circular_progress_bar_black"
+                android:visibility="gone" />
+
+            <TextView
+
+                android:id="@+id/view_notification_progress_text_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <TextView
+
+                android:id="@+id/view_notification_progress_text_white_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="54dp"
+            android:layout_alignRight="@+id/view_notification_change_event_image_button"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/view_notification_progress_relative_layout"
+            android:paddingRight="56dp"
+            android:paddingTop="6dp">
+
+            <TextView
+
+                android:id="@+id/view_notification_title_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+
+                android:id="@+id/view_notification_title_black_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+
+                android:id="@+id/view_notification_title_white_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+
+                android:id="@+id/view_notification_subtitle_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_notification_title_text_view"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="#616161"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <TextView
+
+                android:id="@+id/view_notification_subtitle_black_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_notification_title_black_text_view"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <TextView
+
+                android:id="@+id/view_notification_subtitle_white_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_notification_title_white_text_view"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="#d0ffffff"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <ImageButton
+
+            android:id="@+id/view_notification_change_event_image_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="#00000000"
+            android:clickable="true"
+            android:src="@drawable/event" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string name="app_name">Chalkboard</string>
+    <string name="app_version">0.1</string>
+    <string name="app_version_code">10</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="spinner_prompt_class">Choose your class</string>
+    <string name="spinner_prompt_type">Choose your type</string>
+
+    <string name="changelog"><b>Version 0.1</b>\nMade minor UI changes, fixed crashes that were affecting some users, updated licenses.\n\n<b>Version 0.0.9</b>\nFixed crashes that were affecting some users.\n\n<b>Version 0.0.8</b>\nFixed crashes on Android Oreo and above. Notifications are displayed more consistently. Vector drawables are not blurry anymore.\n\n<b>Version 0.0.7</b>\nFixed a bug where the time until the next class was incorrectly displayed on the notification.\n\n<b>Version 0.0.6</b>\nAdded support for notifications in Android O, fixed the display of reminder notifications while ongoing notifications are shown.\n\n<b>Version 0.0.5</b>\nNo changelog available for this first version.</string>
+
+</resources>

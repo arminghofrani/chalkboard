@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+
+        android:id="@+id/activity_change_class_toolbar"
+        layout="@layout/view_toolbar_padded" />
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+
+                android:id="@+id/activity_change_class_name_relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="4dp">
+
+                <ImageView
+
+                    android:id="@+id/activity_change_class_name_icon_image_view"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/name"
+                    android:tint="#757575" />
+
+                <EditText
+
+                    android:id="@+id/activity_change_class_name_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="28dp"
+                    android:layout_toRightOf="@id/activity_change_class_name_icon_image_view"
+                    android:hint="Name"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:id="@+id/activity_change_class_location_relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@id/activity_change_class_name_relative_layout"
+                android:paddingBottom="4dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="4dp">
+
+                <ImageView
+
+                    android:id="@+id/activity_change_class_location_icon_image_view"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/location"
+                    android:tint="#757575" />
+
+                <EditText
+
+                    android:id="@+id/activity_change_class_location_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="28dp"
+                    android:layout_toRightOf="@id/activity_change_class_location_icon_image_view"
+                    android:hint="Default location"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:id="@+id/activity_change_class_teacher_relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@id/activity_change_class_location_relative_layout"
+                android:paddingBottom="4dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="4dp">
+
+                <ImageView
+
+                    android:id="@+id/activity_change_class_teacher_icon_image_view"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/teacher"
+                    android:tint="#757575" />
+
+                <EditText
+
+                    android:id="@+id/activity_change_class_input_teacher_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="28dp"
+                    android:layout_toRightOf="@id/activity_change_class_teacher_icon_image_view"
+                    android:hint="Default teacher"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <FrameLayout
+
+                android:id="@+id/activity_change_class_color_frame_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activity_change_class_teacher_relative_layout"
+                android:layout_margin="6dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

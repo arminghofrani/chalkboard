@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+
+        android:id="@+id/toolbar_toggle_notification_on_item"
+        android:icon="@drawable/notifications_on"
+        android:orderInCategory="1"
+        android:title="Notifications Off"
+        app:showAsAction="always" />
+
+</menu>

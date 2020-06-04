@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style name="chalkboard_theme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:dialogTheme">@style/dialog_theme</item>
+        <item name="android:actionButtonStyle">@style/action_button</item>
+
+    </style>
+
+    <style name="dialog_theme" parent="@style/Theme.AppCompat.Light.Dialog">
+
+        <item name="android:windowNoTitle">false</item>
+
+    </style>
+
+    <style name="action_button" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:padding">12dp</item>
+
+    </style>
+
+    <style name="license_theme" parent="@style/Theme.AppCompat.Light.Dialog">
+
+        <item name="android:textColor">#000000</item>
+
+    </style>
+
+    <style name="primary_red">
+
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryDark">@color/red_dark</item>
+        <item name="android:statusBarColor">@color/red_dark</item>
+
+    </style>
+
+    <style name="primary_pink">
+
+        <item name="colorPrimary">@color/pink</item>
+        <item name="colorPrimaryDark">@color/pink_dark</item>
+        <item name="android:statusBarColor">@color/pink_dark</item>
+
+    </style>
+
+    <style name="primary_purple">
+
+        <item name="colorPrimary">@color/purple</item>
+        <item name="colorPrimaryDark">@color/purple_dark</item>
+        <item name="android:statusBarColor">@color/purple_dark</item>
+
+    </style>
+
+    <style name="primary_deep_purple">
+
+        <item name="colorPrimary">@color/deep_purple</item>
+        <item name="colorPrimaryDark">@color/deep_purple_dark</item>
+        <item name="android:statusBarColor">@color/deep_purple_dark</item>
+
+    </style>
+
+    <style name="primary_indigo">
+
+        <item name="colorPrimary">@color/indigo</item>
+        <item name="colorPrimaryDark">@color/indigo_dark</item>
+        <item name="android:statusBarColor">@color/indigo_dark</item>
+
+    </style>
+
+    <style name="primary_blue">
+
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/blue_dark</item>
+        <item name="android:statusBarColor">@color/blue_dark</item>
+
+    </style>
+
+    <style name="primary_light_blue">
+
+        <item name="colorPrimary">@color/light_blue</item>
+        <item name="colorPrimaryDark">@color/light_blue_dark</item>
+        <item name="android:statusBarColor">@color/light_blue_dark</item>
+
+    </style>
+
+    <style name="primary_cyan">
+
+        <item name="colorPrimary">@color/cyan</item>
+        <item name="colorPrimaryDark">@color/cyan_dark</item>
+        <item name="android:statusBarColor">@color/cyan_dark</item>
+
+    </style>
+
+    <style name="primary_teal">
+
+        <item name="colorPrimary">@color/teal</item>
+        <item name="colorPrimaryDark">@color/teal_dark</item>
+        <item name="android:statusBarColor">@color/teal_dark</item>
+
+    </style>
+
+    <style name="primary_green">
+
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryDark">@color/green_dark</item>
+        <item name="android:statusBarColor">@color/green_dark</item>
+
+    </style>
+
+    <style name="primary_light_green">
+
+        <item name="colorPrimary">@color/light_green</item>
+        <item name="colorPrimaryDark">@color/light_green_dark</item>
+        <item name="android:statusBarColor">@color/light_green_dark</item>
+
+    </style>
+
+    <style name="primary_lime">
+
+        <item name="colorPrimary">@color/lime</item>
+        <item name="colorPrimaryDark">@color/lime_dark</item>
+        <item name="android:statusBarColor">@color/lime_dark</item>
+
+    </style>
+
+    <style name="primary_orange">
+
+        <item name="colorPrimary">@color/orange</item>
+        <item name="colorPrimaryDark">@color/orange_dark</item>
+        <item name="android:statusBarColor">@color/orange_dark</item>
+
+    </style>
+
+    <style name="primary_deep_orange">
+
+        <item name="colorPrimary">@color/deep_orange</item>
+        <item name="colorPrimaryDark">@color/deep_orange_dark</item>
+        <item name="android:statusBarColor">@color/deep_orange_dark</item>
+
+    </style>
+
+    <style name="primary_blue_grey">
+
+        <item name="colorPrimary">@color/blue_grey</item>
+        <item name="colorPrimaryDark">@color/blue_grey_dark</item>
+        <item name="android:statusBarColor">@color/blue_grey_dark</item>
+
+    </style>
+
+    <style name="accent_red">
+
+        <item name="colorAccent">@color/red_accent</item>
+
+    </style>
+
+    <style name="accent_pink">
+
+        <item name="colorAccent">@color/pink_accent</item>
+
+    </style>
+
+    <style name="accent_purple">
+
+        <item name="colorAccent">@color/purple_accent</item>
+
+    </style>
+
+    <style name="accent_deep_purple">
+
+        <item name="colorAccent">@color/deep_purple_accent</item>
+
+    </style>
+
+    <style name="accent_indigo">
+
+        <item name="colorAccent">@color/indigo_accent</item>
+
+    </style>
+
+    <style name="accent_blue">
+
+        <item name="colorAccent">@color/blue_accent</item>
+
+    </style>
+
+    <style name="accent_light_blue">
+
+        <item name="colorAccent">@color/light_blue_accent</item>
+
+    </style>
+
+    <style name="accent_cyan">
+
+        <item name="colorAccent">@color/cyan_accent</item>
+
+    </style>
+
+    <style name="accent_teal">
+
+        <item name="colorAccent">@color/teal_accent</item>
+
+    </style>
+
+    <style name="accent_green">
+
+        <item name="colorAccent">@color/green_accent</item>
+
+    </style>
+
+    <style name="accent_lime">
+
+        <item name="colorAccent">@color/lime_accent</item>
+
+    </style>
+
+    <style name="accent_yellow">
+
+        <item name="colorAccent">@color/yellow_accent</item>
+
+    </style>
+
+    <style name="accent_amber">
+
+        <item name="colorAccent">@color/amber_accent</item>
+
+    </style>
+
+    <style name="accent_orange">
+
+        <item name="colorAccent">@color/orange_accent</item>
+
+    </style>
+
+    <style name="accent_deep_orange">
+
+        <item name="colorAccent">@color/deep_orange_accent</item>
+
+    </style>
+
+    <style name="tab_layout" parent="Widget.Design.TabLayout">
+
+        <item name="tabTextAppearance">@style/tab_text</item>
+        <item name="tabSelectedTextColor">@color/white</item>
+
+    </style>
+
+    <style name="tab_text" parent="TextAppearance.AppCompat.Button">
+
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+
+</resources>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+
+        android:id="@+id/fragment_overview_no_classes_relative_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:translationY="-32dp"
+        android:visibility="gone">
+
+        <ImageView
+
+            android:layout_width="192dp"
+            android:layout_height="192dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/color_indicator_class_card"
+            android:tint="?attr/colorPrimary" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=" No classes"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+
+        android:id="@+id/fragment_overview_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <android.support.v7.widget.CardView
+
+                android:id="@+id/fragment_overview_current_class_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:visibility="gone">
+
+                <RelativeLayout
+
+                    android:id="@+id/fragment_overview_current_class_card_info_relative_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <RelativeLayout
+
+                        android:id="@+id/fragment_overview_current_class_card_header_relative_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginTop="14dp">
+
+                        <ImageView
+
+                            android:id="@+id/fragment_overview_current_class_card_class_color_indicator_image_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="0.5dp"
+                            android:src="@drawable/color_indicator_class_card"
+                            android:translationY="-0.5dp" />
+
+                        <TextView
+
+                            android:id="@+id/fragment_overview_current_class_card_title_text_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignRight="@id/fragment_overview_current_class_card_class_color_indicator_image_view"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:paddingRight="56dp"
+                            android:textSize="18sp" />
+
+                        <TextView
+
+                            android:id="@+id/fragment_overview_current_class_card_location_teacher_text_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignRight="@id/fragment_overview_current_class_card_class_color_indicator_image_view"
+                            android:layout_below="@id/fragment_overview_current_class_card_title_text_view"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:paddingRight="56dp"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/fragment_overview_current_class_card_header_relative_layout"
+                        android:layout_marginBottom="13dp">
+
+                        <ProgressBar
+
+                            android:id="@+id/fragment_overview_current_class_card_progress_bar"
+                            style="@android:style/Widget.Material.ProgressBar.Horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0.75dp"
+                            android:layout_marginRight="0.75dp"
+                            android:progressTint="?attr/colorPrimary">
+
+                        </ProgressBar>
+
+                        <TextView
+
+                            android:id="@+id/fragment_overview_current_class_card_start_time_text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/fragment_overview_current_class_card_progress_bar"
+                            android:textSize="14sp" />
+
+                        <TextView
+
+                            android:id="@+id/fragment_overview_current_class_card_end_time_text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/fragment_overview_current_class_card_progress_bar"
+                            android:textSize="14sp" />
+
+                        <TextView
+
+                            android:id="@+id/fragment_overview_current_class_card_progress_percentage_text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/fragment_overview_current_class_card_progress_bar"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+
+                android:id="@+id/fragment_overview_next_classes_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_overview_current_class_card_view"
+                android:layout_margin="4dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp">
+
+                    <ExpandableListView
+
+                        android:id="@+id/fragment_overview_next_classes_list_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:childDivider="#d3d3d3"
+                        android:dividerHeight="1dp"
+                        android:layoutDirection="rtl"
+                        android:scrollbars="none">
+
+                    </ExpandableListView>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+
+                android:id="@+id/fragment_overview_tomorrow_classes_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_overview_next_classes_card_view"
+                android:layout_margin="4dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp">
+
+                    <ExpandableListView
+
+                        android:id="@+id/fragment_overview_tomorrow_classes_list_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:childDivider="#d3d3d3"
+                        android:dividerHeight="1dp"
+                        android:layoutDirection="rtl"
+                        android:scrollbars="none">
+
+                    </ExpandableListView>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

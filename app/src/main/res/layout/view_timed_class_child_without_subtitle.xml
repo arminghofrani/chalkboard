@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:layoutDirection="ltr"
+    android:minHeight="52dp">
+
+    <ImageView
+
+        android:id="@+id/view_timed_class_child_without_subtitle_color_indicator_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/color_indicator_list" />
+
+    <TextView
+
+        android:id="@+id/view_timed_class_child_without_subtitle_time_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@id/view_timed_class_child_without_subtitle_color_indicator_image_view"
+        android:gravity="right"
+        android:textSize="12sp" />
+
+    <TextView
+
+        android:id="@+id/view_timed_class_child_without_subtitle_title_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/view_timed_class_child_without_subtitle_color_indicator_image_view"
+        android:layout_centerVertical="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingRight="128dp"
+        android:textSize="15sp" />
+
+</RelativeLayout>

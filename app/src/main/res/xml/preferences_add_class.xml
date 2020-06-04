@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/apk/res-auto">
+
+    <org.xdty.preference.ColorPreference
+
+        android:defaultValue="@color/teal"
+        android:key="add_class_color"
+        android:summary="This color is associated with the class"
+        android:title="Choose a color"
+        tools:colors="@array/add_class_colors"
+        tools:columns="5"
+        tools:dialogTitle="Choose a color" />
+
+</PreferenceScreen>

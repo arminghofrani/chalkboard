@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="4dp">
+
+    <Spinner
+
+        android:id="@+id/dialog_edit_day_add_class_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="23.5dp"
+        android:prompt="@string/spinner_prompt_class"
+        android:scrollbars="none" />
+
+    <TextView
+
+        android:id="@+id/dialog_edit_day_add_class_start_time_label_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_edit_day_add_class_spinner"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="24dp"
+        android:text="Start time:"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <TextView
+
+        android:id="@+id/dialog_edit_day_add_class_start_time_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/dialog_edit_day_add_class_start_time_label_text_view"
+        android:layout_marginRight="29.75dp"
+        android:gravity="right"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <TextView
+
+        android:id="@+id/dialog_edit_day_add_class_end_time_label_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_edit_day_add_class_start_time_label_text_view"
+        android:layout_marginTop="4dp"
+        android:paddingLeft="24dp"
+        android:text="End time:"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <TextView
+
+        android:id="@+id/dialog_edit_day_add_class_end_time_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/dialog_edit_day_add_class_end_time_label_text_view"
+        android:layout_marginRight="29.75dp"
+        android:gravity="right"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <EditText
+
+        android:id="@+id/dialog_edit_day_add_class_location_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_edit_day_add_class_end_time_label_text_view"
+        android:layout_marginLeft="20.25dp"
+        android:layout_marginRight="26.25dp"
+        android:layout_marginTop="8dp"
+        android:hint="Custom Location (Optional)"
+        android:inputType="textCapWords"
+        android:maxLines="1"
+        android:textSize="15sp" />
+
+    <EditText
+
+        android:id="@+id/dialog_edit_day_add_class_teacher_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_edit_day_add_class_location_edit_text"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="20.25dp"
+        android:layout_marginRight="26.25dp"
+        android:hint="Custom Teacher (Optional)"
+        android:inputType="textCapWords"
+        android:maxLines="1"
+        android:textSize="15sp" />
+
+</RelativeLayout>
